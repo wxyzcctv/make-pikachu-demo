@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Han">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="./window/prism/prism.css">
+    <link rel="stylesheet" href="css/default.css">
+    <style id="styleTage"></style>
+    <title>画一只皮卡丘给你看</title>
+</head>
+<body>
+    <div class="code-wrapper">
+        <pre id="code"></pre>
+    </div>
+    <div class="preview-wrapper">
+        <div class="preview">
+            <div class="wrapper">
+                <div class="lowerLip-wrapper">
+                    <div class="lowerLip"></div>
+                </div>
+                <!-- 由于css设计样式的时候后面的样式会覆盖前面的样式，
+                    这时将下嘴唇放在最前面就会出现在最下面 -->
+                <div class="node"></div>
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="face left"></div>
+                <div class="face right"></div>
+                <div class="upperLip left"></div>
+                <div class="upperLip right"></div>
+                
+              </div>
+        </div>
+    </div>
+    <div class="actions">
+        <button data-speed="slow">慢速</button>
+        <button data-speed="normal" class="active">中速</button>
+        <button data-speed="fast">快速</button>
+        <button data-speed="close">结束</button>
+    </div>
+</body>
+<script src="./window/prism/prism.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/main.js"></script>
+</html>
+
